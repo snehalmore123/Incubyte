@@ -21,7 +21,13 @@ class StringCalculatorShould {
     @Test
     void string_with_numbers_delemited_by_comma_should_return_sum() {
     	StringCalculator stringCalculator = new StringCalculator();
-    	assertEquals(7,stringCalculator.add("3,4"));
+    	assertEquals(7, stringCalculator.add("3,4"));
+    }
+    
+    @Test
+    void string_with_multiple_numbers_delemited_by_comma_should_return_sum() {
+    	StringCalculator stringCalculator = new StringCalculator();
+    	assertEquals(10, stringCalculator.add("1,2,4,3"));
     }
     
     
